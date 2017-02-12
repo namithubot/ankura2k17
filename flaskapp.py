@@ -16,6 +16,7 @@ mail = Mail()
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
+# Test key
 app.secret_key = 'U\xcbz\x0e\xff-\x95\x8a;z\xb3&\xa8\x11\x08\xb6r\x7f#\xba#\xde~\xe0\nO\x7f0\x11\xddv\x05'
 
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
