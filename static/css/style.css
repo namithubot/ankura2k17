@@ -1,0 +1,12 @@
+
+.spacing{display:block; height:40px; overflow:hidden;}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+
+
