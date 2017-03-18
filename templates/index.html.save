@@ -8,18 +8,11 @@
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 
 	<script type="text/javascript" src="/js/jquery.js"></script>
 
 	<!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<style>
-				.responsive-img.card-newsize{
-					max-width: 300px;
-					max-height: 300px;
-				}
-		</style>
 
 </head>
 <body>
@@ -51,7 +44,7 @@
 </div>
 <!-- Navigation End -->
 <div id="particles-js" style='background-color: rgb(35, 39, 65); background-image: url("https://mridulganga.github.io/nisb-cdn/img/ankura.png"); background-size: 40%; background-repeat: no-repeat; background-position: 50% 50%;'>
-
+	
 </div>
 
 
@@ -61,32 +54,9 @@
 <div class="row" id="about">
 <div class="container">
 	<h2 class="center">About US</h2>
-	<!-- <p>Ankura aims to harbour the talents of young minds and give them an insight to the real world. It's the annual even semester technical fest. Of the students, by the students and for the students.</p>
-	<p>IEEE brings together computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field's challenges. As the world’s largest computing society, IEEE strengthens the profession’s collective voice through strong leadership, promotion of the highest standards, and recognition of technical excellence. IEEE supports the professional growth of its members by providing opportunities for life‐long learning, career development, and professional networking.</p> -->
-	<pre>Ankura aims to harbour the talents of young minds and give them an insight to the real world.
-It's the annual even semester technical fest. Of the students, by the students and for the students.
-This comes under the IEEE Student Chapter of the National Institute of Engineering, Mysuru.
-Students from all over the nation take active participation every year. Technology being the main focus,
-this event tends to open the conclaves of the youth and get those aspiring ideas and thoughts,
-bringing them for the use of greater good.
-Ankura is a Sanskrit word that means sprouting. And that is something we intend to do in our events.
-
-We intend to ‘ankura’ the minds of all the participants in a certain technically defined ways that
-shall help the students in their life for a long run.
-
-Innovation has always been the way Ankura works. With the best of minds from around the country,
-we strive to steer people towards a more open and thoughtful society.
-To disabuse from the delusions of fog, Ankura has done a tremendous job over the years by engaging
-young minds in technical activities, and training them for real-time management skills.
-
-Mark your calendar! We welcome you to witness Ankura this March of 2017 and indulge yourself in the
-world of our technical and management skills enhancement activities. These are the things that go deep
-within people,and we make sure that they go forward with you.
-
-		 Let’s travel at the speed of life, let’s Ankura!
-	</pre>
-	<!-- <p style="margin-bottom:0px;">Every year we impart knowledge to hundreds of students and help them understand how they can contribute to the field of computing science. We conduct several technical events in a year.
-		 We nurture the growth of inquisitive minds by providing them with the toolkit to excel in various fields.</p> -->
+	<p>NIE IEEE is one of the most popular chapters in NIE. NIE IEEE student chapter was started up in October 2003 by Srinidhi Prahlad. Since then we at the NIE IEEE student chapter have carried on the legacy of IEEE international.</p>
+	<p>IEEE brings together computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field's challenges. As the world’s largest computing society, IEEE strengthens the profession’s collective voice through strong leadership, promotion of the highest standards, and recognition of technical excellence. IEEE supports the professional growth of its members by providing opportunities for life‐long learning, career development, and professional networking.</p>
+	<p style="margin-bottom:0px;">Every year we impart knowledge to hundreds of students and help them understand how they can contribute to the field of computing science. We conduct several technical events in a year. We nurture the growth of inquisitive minds by providing them with the toolkit to excel in various fields.</p>
 </div>
 </div>
 
@@ -109,9 +79,9 @@ within people,and we make sure that they go forward with you.
 			<b>Date :</b> {{ e.start_time[0:10] }} <br>
 			<b>Description :</b> {{ e.description }} <br>
 			<b>Image :</b> <br>
-			<img class="responsive-img"  src='{{ e.cover["source"] }}'>
+			<img class="responsive-img" src='{{ e.cover["source"] }}'>
 		</span>
-		</div>
+		</div>        
 		</li>
 	{% endif %}
 {% endfor %}
@@ -129,9 +99,8 @@ within people,and we make sure that they go forward with you.
 			<b>Date :</b> {{ e.start_time[0:10] }} <br>
 			<b>Description :</b> {{ e.description }} <br>
 			<b>Image :</b> <br>
-			<img class="responsive-img"  src='{{ e.cover["source"] }}'>
-		</span>
-		</div>
+			<img class="responsive-img" src='{{ e.cover["source"] }}'>		</span>
+		</div>        
 		</li>
 	{% endif %}
 {% endfor %}
@@ -148,9 +117,9 @@ within people,and we make sure that they go forward with you.
 			<b>Date :</b> {{ e.start_time[0:10] }} <br>
 			<b>Description :</b> {{ e.description }} <br>
 			<b>Image :</b> <br>
-			<img class="responsive-img card-newsize"  src='{{ e.cover["source"] }}'>
+			<img class="responsive-img" src='{{ e.cover["source"] }}'>
 		</span>
-		</div>
+		</div>        
 		</li>
 	{% endif %}
 {% endfor %}
@@ -177,153 +146,129 @@ within people,and we make sure that they go forward with you.
 	<div class="spacing"></div>
 	<h2 class="center">Sponsors</h2>
 
-	<center><h4>Present Sponsors</h2></center>
-		<div class="row">
-	    <div class="col s12 m6">
-	      <div class="card" style="height: 200px; width: 300px;">
-	        <div class="card-image">
-						<img class="responsive-img" src="https://www.syndicatebank.in/images/logo-main.jpg">
-	        </div>
-	        <center style="padding: 5px; color:black;"><span class="card-title">Syndicate Bank</span></center>
-	      </div>
-	    </div>
-
-			<div class="row">
-				<div class="col s12 m6">
-					<div class="card" style="height: 200px; width: 300px;">
-						<div class="card-image">
-							<img class="responsive-img" src="http://www.twenty19.com/Data/internship/large/logo_282.jpg">
-						</div>
-						<center style="padding: 3px; color:black;"><span class="card-title">Twenty19</span></center>
-					</div>
-				</div>
-			</div>
-
-
 	<style type="text/css">
-		.card-image{padding: 15px; }
+		.card-image{padding: 15px; } 
 	</style>
-</br>
-</br>
-<center><h4>Past Sponsors</h2></center>
+
 	<div class="row">
     <div class="col s12 m4">
-      <div class="card card-newsize">
+      <div class="card">
         <div class="card-image">
-          <img class="responsive-img card-newsize"  src="http://adroit.nisb.in/img/sponsors/unnamed.gif">
+          <img style="height: 200px;" class="responsive-img" src="http://adroit.nisb.in/img/sponsors/unnamed.gif">
         </div>
         <center style="padding: 5px; color:black;"><span class="card-title">TEQUIP</span></center>
       </div>
     </div>
-
+  
   	<div class="col s12 m4">
-      <div class="card card-newsize">
+      <div class="card">
         <div class="card-image">
-          <img class="responsive-img card-newsize"  src="http://adroit.nisb.in/img/sponsors/images.png">
+          <img style="height: 200px;" src="http://adroit.nisb.in/img/sponsors/images.png">
         </div>
         <center style="padding: 5px; color:black;"><span class="card-title">HackerEarth</span></center>
       </div>
     </div>
-		<div class="col s12 m4">
-      <div class="card card-newsize">
+
+    <div class="col s12 m4">
+      <div class="card">
         <div class="card-image">
-          <img class="responsive-img card-newsize"  src="http://adroit.nisb.in/img/sponsors/rlb.jpg">
+          <img style="height: 200px;" src="http://adroit.nisb.in/img/sponsors/Logo.png">
         </div>
-        <center style="padding: 5px; color:black;"><span class="card-title">RedlotusSuites</span></center>
+        <center style="padding: 5px; color:black;"><span class="card-title">SKANRAY</span></center>
       </div>
     </div>
-		<div class="col s12 m4">
-      <div class="card card-newsize">
-        <div class="card-image">
-          <img class="responsive-img card-newsize"  src="http://adroit.nisb.in/img/sponsors/RED%20FM%20LOGO.jpg">
-        </div>
-        <center style="padding: 5px; color:black;"><span class="card-title">RedFMIndia</span></center>
-      </div>
-    </div>
-
-		<div class="col s12 m4">
-      <div class="card card-newsize">
-        <div class="card-image">
-          <img class="responsive-img card-newsize"  src="https://upload.wikimedia.org/wikipedia/commons/e/e5/L%26T.png">
-        </div>
-        <center style="padding: 5px; color:black;"><span class="card-title">LarsenTurbo</span></center>
-      </div>
-    </div>
-
-
+  
   	<div class="col s12 m4">
-      <div class="card card-newsize">
+      <div class="card">
         <div class="card-image">
-          <img class="responsive-img card-newsize"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Mcdonalds-90s-logo.svg/220px-Mcdonalds-90s-logo.svg.png">
+          <img style="height: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Mcdonalds-90s-logo.svg/220px-Mcdonalds-90s-logo.svg.png">
         </div>
         <center style="padding: 5px; color:black;"><span class="card-title">McDonalds</span></center>
       </div>
     </div>
 
+    
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img style="height: 200px;" src="http://adroit.nisb.in/img/sponsors/RED%20FM%20LOGO.jpg">
+        </div>
+        <center style="padding: 5px; color:black;"><span class="card-title">RedFMIndia</span></center>
+      </div>
+    </div>
+  
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img style="height: 200px;" src="http://adroit.nisb.in/img/sponsors/drc-cinemas-mysore.jpg">
+        </div>
+        <center style="padding: 5px; color:black;"><span class="card-title">DRC-Cinemas</span></center>
+      </div>
+    </div>
 
     <div class="col s12 m4">
-      <div class="card card-newsize">
+      <div class="card">
         <div class="card-image">
-          <img class="responsive-img card-newsize"  src="http://adroit.nisb.in/img/sponsors/xlogo.png.pagespeed.ic.ra-d7PVgUc.png">
+          <img style="height: 100px;" src="http://adroit.nisb.in/img/sponsors/xlogo.png.pagespeed.ic.ra-d7PVgUc.png">
         </div>
         <center style="padding: 5px; color:black;"><span class="card-title">RoboCraze</span></center>
       </div>
     </div>
 
   	<div class="col s12 m4">
-      <div class="card card-newsize">
+      <div class="card">
         <div class="card-image">
-          <img class="responsive-img card-newsize"  src="http://www.foodbox.in/images/logo.jpg">
+          <img style="height: 100px;" src="http://www.foodbox.in/images/logo.jpg">
         </div>
         <center style="padding: 5px; color:black;"><span class="card-title">FoodBox</span></center>
       </div>
     </div>
 
     <div class="col s12 m4">
-      <div class="card card-newsize">
+      <div class="card">
         <div class="card-image">
-          <img class="responsive-img card-newsize"  src="http://adroit.nisb.in/img/sponsors/Unilog-logo.png">
+          <img style="height: 100px;" src="http://adroit.nisb.in/img/sponsors/Unilog-logo.png">
         </div>
         <center style="padding: 5px; color:black;"><span class="card-title">Unilog</span></center>
       </div>
     </div>
 
-  	<div class="col s12 m4">
-      <div class="card card-newsize" >
+    <div class="col s12 m4">
+      <div class="card">
         <div class="card-image">
-          <img class="responsive-img card-newsize"  src="http://adroit.nisb.in/img/sponsors/loyalworld_old.png">
+          <img style="height: 200px;" src="http://adroit.nisb.in/img/sponsors/logo%20with%20tagline.jpg">
+        </div>
+        <center style="padding: 5px; color:black;"><span class="card-title">KritaVidyaAcademy</span></center>
+      </div>
+    </div>
+  
+  	<div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img style="height: 200px;" src="http://adroit.nisb.in/img/sponsors/loyalworld_old.png">
         </div>
         <center style="padding: 5px; color:black;"><span class="card-title">LoyalWorldGroup</span></center>
       </div>
     </div>
 
-		<div class="col s12 m4">
-			<div class="card card-newsize">
-				<div class="card-image">
-					<img class="responsive-img card-newsize"  src="http://adroit.nisb.in/img/sponsors/drc-cinemas-mysore.jpg">
-				</div>
-				<center style="padding: 5px; color:black;"><span class="card-title">DRC-Cinemas</span></center>
-			</div>
-		</div>
-
-		<div class="col s12 m4">
-			<div class="card card-newsize">
-				<div class="card-image">
-					<img class="responsive-img card-newsize"  src="http://adroit.nisb.in/img/sponsors/Logo.png">
-				</div>
-				<center style="padding: 5px; color:black;"><span class="card-title">SKANRAY</span></center>
-			</div>
-		</div>
-
-		<div class="col s12 m4">
-      <div class="card card-newsize" >
+    <div class="col s12 m4">
+      <div class="card">
         <div class="card-image">
-          <img class="responsive-img card-newsize"  src="http://adroit.nisb.in/img/sponsors/logo%20with%20tagline.jpg">
+          <img style="height: 200px;" src="http://adroit.nisb.in/img/sponsors/rlb.jpg">
         </div>
-        <center style="padding: 5px; color:black;"><span class="card-title">KritaVidyaAcademy</span></center>
+        <center style="padding: 5px; color:black;"><span class="card-title">RedlotusSuites</span></center>
       </div>
     </div>
-
+  
+  	<div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img style="height: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/L%26T.png">
+        </div>
+        <center style="padding: 5px; color:black;"><span class="card-title">LarsenTurbo</span></center>
+      </div>
+    </div>
+  	
     	</div>
     	<div class="spacing"></div>
 	</div>
@@ -351,14 +296,14 @@ within people,and we make sure that they go forward with you.
    <div class="container">
    <div style="float: left; line-height: 30px;">(CC) Creative Commons</div>
    <ul class="grey-text text-lighten-4 right" href="#!" style="float: right; margin:0;">
-   		<a href="http://twitter.com/niemysieee" style="color:white!important;"><i class="fa fa-twitter fa-2x"></i></a>
-   		<a href="http://facebook.com/nieieeestudentbranch" style="color:white!important;"><i class="fa fa-facebook fa-2x"></i></a>
+   		<a href="http://twitter.com/niemysieee" style="color:white!important;"><i class="fa fa-twitter fa-2x"></i></a>  
+   		<a href="http://facebook.com/nieieeestudentbranch" style="color:white!important;"><i class="fa fa-facebook fa-2x"></i></a>  
    		<a href="https://instagram.com/nie_ieee_student_branch" style="color:white!important;"><i class="fa fa-instagram fa-2x"></i></a>
    </ul>
    </div>
  </div>
 </footer>
-
+  
 
 
 
