@@ -2,7 +2,7 @@ from flask import Flask, send_from_directory, request, render_template
 import json
 import os
 import facebook
-from random import shuffle
+from random import shuffle 
 #from flask_mail import Message, Mail
 
 #mail = Mail()
