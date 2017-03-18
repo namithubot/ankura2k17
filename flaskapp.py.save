@@ -15,6 +15,7 @@ from random import shuffle
 # TODO: Using environment variable
 
 app = Flask(__name__)
+app.config['DEBUG'] = True
 
 # Test app sec key
 app.secret_key = 'U\xcbz\x0e\xff-\x95\x8a;z\xb3&\xa8\x11\x08\xb6r\x7f#\xba#\xde~\xe0\nO\x7f0\x11\xddv\x05'
@@ -25,10 +26,6 @@ app.secret_key = 'U\xcbz\x0e\xff-\x95\x8a;z\xb3&\xa8\x11\x08\xb6r\x7f#\xba#\xde~
 #app.config["MAIL_USERNAME"] = 'nisbglimpse@gmail.com'
 #app.config["MAIL_PASSWORD"] = 'nisb@nie'
 #mail.init_app(app)
-
-@app.errorhandler(404)
-def page_not_found(e):
-    return "<h3>Page Not Found. Try visiting <a href='http://ankura.nisb.in'>The Ankura Home Page</a></h3>"
 
 @app.route('/<path:resource>')
 def serveStaticResource(resource):
@@ -103,4 +100,4 @@ def hello_world():
 #  return hello_world()
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
